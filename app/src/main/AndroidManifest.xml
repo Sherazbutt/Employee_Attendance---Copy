@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sherazbutt.employee_attendance">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Add_user"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".User_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin_menu"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Signup_admin" />
+        <activity
+            android:name=".Take_Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register_employee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view_attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lunch_timeout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailsActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Att_details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Att_Second_Activity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Menu_Admin_new" />
+        <activity android:name=".User_menu_new" />
+        <activity android:name=".Add_user_New"></activity>
+    </application>
+
+</manifest>

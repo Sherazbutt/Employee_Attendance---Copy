@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sherazbutt.employee_attendance.Register_employee"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/ad_emplo"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@drawable/add_emp_cic"
+        android:layout_marginLeft="100dp"
+        android:layout_above="@+id/e_name"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_name"
+        android:singleLine="true"
+
+        android:hint="Employee Name"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/e_department"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="1"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/name_check"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/e_department"
+        android:textColor="#ffffff"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:hint="Department"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/e_contact"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="#FFFFFF"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/deprtmentcopy"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:singleLine="true"
+        android:id="@+id/e_contact"
+        android:textColor="#ffffff"
+        android:maxLines="1"
+        android:hint="Contact No"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#FFFFFF"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/smartphoncopy"
+        android:layout_above="@+id/dob_btn"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register_employee"
+        android:textColor="#28a1d8"
+        android:typeface="sans"
+        android:background="@drawable/btntwo"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of birth"
+        android:textColor="#ffffff"
+        android:background="@drawable/btnlightblue"
+        android:id="@+id/dob_btn"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/register_employee"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+</RelativeLayout>

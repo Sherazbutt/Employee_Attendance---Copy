@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sherazbutt.employee_attendance.Lunch_timeout"
+    android:background="@drawable/gradient">
+    <ImageView
+        android:id="@+id/ad_userr"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/clock"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="-12dp"
+        android:layout_marginBottom="0dp" />
+
+    <Spinner
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinner"
+        android:ellipsize="marquee"
+        android:textSize="25sp"
+        android:textColor="#808080"
+        android:text="[Select Employee...]"
+        android:paddingRight="10dp"
+        android:layout_marginRight="25dp"
+        android:paddingTop="0dp"
+        android:layout_below="@+id/ad_userr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/time_out_save"
+        android:textStyle="bold"
+        android:background="@drawable/btntwo"
+        android:textColor="#28a1d8"
+        android:typeface="normal"
+        android:textSize="16dp"
+        android:layout_below="@+id/w_hours"
+        android:layout_marginRight="0dp"
+        android:layout_alignStart="@+id/t_in"
+        android:layout_alignEnd="@+id/t_out" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_btn"
+        android:textColorHint="#FFFFFF"
+
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btnlightblue"
+        android:textSize="15dp"
+        android:hint="SELECT DATE"
+        android:typeface="normal"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_in"
+        android:hint="TIME IN"
+        android:textColorHint="#FFFFFF"
+
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btnlightblue"
+        android:textSize="15dp"
+        android:typeface="normal"
+        android:layout_alignTop="@+id/t_out"
+        android:layout_alignStart="@+id/date_btn"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_out"
+        android:hint="TIME OUT"
+        android:textColorHint="#FFFFFF"
+
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btnlightblue"
+        android:textSize="15dp"
+        android:typeface="normal"
+        android:layout_below="@+id/date_btn"
+        android:layout_alignEnd="@+id/date_btn"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/w_hours"
+        android:hint="WORKING HOURS"
+        android:textColorHint="#FFFFFF"
+
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btnlightblue"
+        android:textSize="15dp"
+        android:typeface="normal"
+        android:layout_below="@+id/t_in"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_marginBottom="23dp" />
+
+</RelativeLayout>
